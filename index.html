@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaqueline Animation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="animation">
+        <h1 class="name">Jaqueline</h1>
+        <h2 class="love">Você é uma gata</h2>
+    </div>
+
+    
+    <style>
+        @keyframes heartbeat {
+            0% {
+              transform: scale(1);
+           }
+            50% {
+              transform: scale(1.1);
+           }
+            100% {
+              transform: scale(1);
+           }
+          }
+        
+          .animation {
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+           justify-content: center;
+           height: 100vh;
+           background-color: #ffb6c1;
+          }
+        
+          .name {
+           font-size: 48px;
+           color: #000;
+          }
+        
+          .love {
+           font-size: 36px;
+           color: #000;
+           animation: heartbeat 1.5s infinite alternate;
+          }
+    </style>
+   
+</body>
+</html>
